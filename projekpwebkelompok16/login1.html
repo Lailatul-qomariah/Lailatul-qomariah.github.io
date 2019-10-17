@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="JAMAIN.css">
+	<title>Beranda</title>
+
+</head>
+<body>
+
+		<center>
+		<a href=""class="menu">Beranda</a>
+		<a href="translate.html" class="menu">Kamus</a> 
+		<a href="aksara.html" class="menu">Aksara</a> 
+		<a href="" class="menu" ><span>Sastra</span></a>
+		</center>
+
+		<p class="jamain1"> Jama.in </p>
+		<p class="text1"> Belajar dengan mudah bahasa, aksara, sastra Madura dan Jawa.</p><br><br><br><br><br><br><br>
+		<a onclick="tombol()"><button id="tombol">JOIN SEKARANG</button></a>
+		<p class="sosmed">Social Media<br><br>
+			<a href="http://www.facebook.com"><img src="fb.png"></a>
+			<a href="https://twitter.com/"><img src="twit.png">
+			<a href="https://www.instagram.com/"><img src="ig.jpg"></a></p>
+
+
+	<div id="box" class="isinya">
+		<div class="konten">
+			<div class="head">
+				<br><center><h2>Daftar</h2></center>
+			</div>
+
+			<div class="main">
+				<form class="form">
+
+					<input type="text" name="namaLengkap" placeholder="Nama Lenkap"><br>
+					<input type="text" name="email" placeholder="Email"><br>
+					<input type="password" name="password" placeholder="password"><br>
+					<input type="password" name="password1" placeholder="Konfirmasi password"><br>
+					<input type="checkbox" name="ceklist" class="ye">Ingat Saya<br>
+					<a href="translate.html"><button type="button" name="button">DAFTAR</button></a><br>
+					<p class="opsi">Masuk dengan : </p><br>
+					<a href="http://facebook.com"><p align="center"><img src="fb.png"></a>
+					<a href="http://www.google.com"> <img src="google.png"></a></p>
+					<p class="opsi">SUDAH PUNYA AKUN? <a href="">Masuk</a> : </p><br><br>
+				</form>
+			</div>
+
+
+		</div>
+	</div>
+	
+
+<script>
+	
+
+var login = document.getElementById('box');
+
+
+var Linky = document.getElementById("tombol");
+
+Linky.onclick = function() {
+    login.style.display = "block";
+}
+
+
+</script>
+
+
+</body>
+</html>
