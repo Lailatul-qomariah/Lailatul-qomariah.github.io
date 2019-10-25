@@ -1,54 +1,69 @@
 body {
-	background-image: url(background.jpg);
+	background-image: url('image/background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 
-.menu{
-  background-color: #CBAEA2;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
+
+  .menu{
+    margin-top: 1%;
+    margin-left: 20%;
+ 
+  }
+
+  .menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    
+  }
+
+.menu ul li {
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+}
+
+  
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.menu li a:hover{
+  padding:16px 32px;
+  text-align: right;
   font-size: 16px;
-  margin: 4px 2px;
   opacity: 0.8;
   transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 39%;
-  margin-right: 4%;
-  margin-left: 4%;
-  margin-top: 2%;
-}
+  border-radius: 40%;
+  margin-right:2%;
+  margin-left: 3%;
+  background-color: #CBAEA2;
+  }
 
-.menu:hover {opacity: 1}
+  li.dropdown {
+    display: inline-block;
+  }
 
-.menu:hover span {
-  padding-right: 10px;
-}
+  .dropdown:hover .isi {
+    display: block;
+  }
 
-.menu:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+  .isi {
+    position: absolute;
+    display: none;
+    background-color: #CBAEA2;
+    padding-left: 0%;
+  }
 
-.menu span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.menu span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+  .isi a:hover {
+    color: black ;
+    background: black;
+  }
 
 
 @font-face {
@@ -71,19 +86,94 @@ body {
 	margin-right: 8%;
 }
 
-.tombol{
+#tombol{
 	background: #5C92F0;
 	color: white;
-	font-size: 11pt;
-	width: 100%;
+	font-size: 16px;
 	border: none;
-	border-radius: 3px;
+	border-radius: 20px;
 	padding: 10px 20px;
-	width: 200px;
-	border-radius: 37%;
+	width: 15%;
 	margin-left: 63%;
 	margin-right: 20%
 }
 
+#tombol:hover {
+  background-color: #CBAEA2;
+  opacity: 1;
+ 
+}
+
+.isinya{
+    display: none;
+    position: fixed;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.konten {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.main{
+  padding: 5px 6px;
+}
 
 
+input {
+  margin-left: 30%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 40%;
+
+}
+.ye{
+  width: 4%;
+}
+
+button{
+  background: #5C92F0;
+  margin-left: 30%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 40%;
+}
+.opsi{
+  font-size: 20px;
+  text-align: center;
+  font-family: "book antiqua";
+}
+
+img{
+  width: 5%;
+  height: 5%;
+  padding-left: 3%;
+}
+
+.head{
+    font-size: 20px;
+    padding: 1px 16px;
+    background: white;
+}
+
+.sosmed{
+  padding-top: 8%;
+}
+
+.sosmed img{
+  width: 3%;
+  height: 3%;
+  padding-left: 3%;
+}

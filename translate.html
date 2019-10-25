@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halaman Translate</title>
+	<link rel="stylesheet" type="text/css" href="jamain1.css">
+
+</head>
+<body>
+	<div class="header">
+		<p>Jamain
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Beranda</a></li>
+				<li><a href="translate.html">Kamus</a></li>
+				<li><a href="aksara.html">Aksara</a></li>
+				<li class="dropdown"><a href="#">Sastra</a>
+					<ul class="isi">
+						<li><a href="Papareghan.html">Madura</a></li>
+						<li><a href="Parikan.html">Jawa</a></li>
+					</ul>
+				</li>
+			<input type="text" name="cari" placeholder="Cari" id="cari">
+			<a onclick="loop()"><input type="image" src="image/loop.png" alt="Submit button" id="loop"> </a>
+			</ul>
+		</div>
+		</p>
+	</div>
+	<div id="bahasa">
+		<select>
+			<option value="" disabled selected>Pilih Bahasa</option>
+			<option value="Indonesia">Indonesia</option>
+			<option value="Madura"> Madura</option>
+			<option value="Jawa">Jawa</option>
+		</select>
+
+		<input type="image" name="switch" src="image/switch.png" class="switch"></input>
+
+		<select>
+			<option value="" disabled selected>Pilih Bahasa</option>
+			<option value="Indonesia">Indonesia</option>
+			<option value="Madura"> Madura</option>
+			<option value="Jawa">Jawa</option>
+		</select>
+	</div>
+	<div class="kotak">
+	<textarea rows="20" placeholder="Masukkan Teks" class="textarea1"></textarea>
+	<textarea rows="20" placeholder="Masukkan Teks" class="textarea2"></textarea>
+	<button class="translate">Translate</button>
+	</div>
+
+	<div id="footer">
+		<div class="p3"> JAMA.IN</div>
+		<div class="garis"></div>
+		<div class="p2"> Find us <br>
+			<img src="image/fb.png">
+			<img src="image/twit.png">
+			<img src="image/ig.jpg"><br>
+			Copyright &copy; Universitas jember 2019
+		</div>
+		<div class="garis"></div>
+		<div class="p1">
+			Oleh :<br>
+			Lailatul Qomariah - 182410101018<br>
+			Iga Novinda R - 182410101020<br>
+		</div>
+	</div>
+
+<script>
+	var search = document.getElementById('cari');
+	var link = document.getElementById("loop");
+	link.onclick = function() {search.style.display = "inline-block";}
+</script>
+</body>
+</html>
