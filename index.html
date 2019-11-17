@@ -11,12 +11,12 @@
 		<div class="menu">
 					<ul>
 						<li><a href="index.html">Beranda</a></li>
-						<li><a href="translate.html">Kamus</a></li>
-						<li><a href="aksara.html">Aksara</a></li>
+						<li><a href="#">Kamus</a></li>
+						<li><a href="#">Aksara</a></li>
 						<li class="dropdown"><a href="#">Sastra</a>
 							<ul class="isi">
-								<li><a href="Papareghan.html">Madura</a></li>
-								<li><a href="Parikan.html">Jawa</a></li>
+								<li><a href="#">Madura</a></li>
+								<li><a href="#">Jawa</a></li>
 							</ul>
 					</ul>
 		</center>
@@ -37,14 +37,15 @@
 			</div>
 
 			<div class="main">
-				<form onsubmit="return validation();">
+				<form>
 
 					<input type="text" id="nama" name="namaLengkap" placeholder="Nama Lenkap"><br>
 					<input type="text" id="email" name="email" placeholder="Email"><br>
 					<input type="password" id="password" name="password" placeholder="password"><br>
-					<input type="password" id="password1" name="password1" placeholder="Konfirmasi password"><br>
+					<input type="password" id="password1" name="password1" placeholder="Konfirmasi password">
+					<br>
 					<input type="checkbox" name="ceklist" class="ye">Ingat Saya<br>
-					<a href="translate.html"><button type="button" name="button">DAFTAR</button></a><br>
+					<button type="button" name="button" onclick="klik()" id="daftar">DAFTAR</button><br>
 					<p class="opsi">Masuk dengan : </p><br>
 					<a href="http://facebook.com"><p align="center"><img src="image/fb.png"></a>
 					<a href="http://www.google.com"> <img src="image/google.png"></a></p>
@@ -57,11 +58,7 @@
 	</div>
 	
 
-<script>
-var login = document.getElementById('box');
-var Linky = document.getElementById("tombol");
-Linky.onclick = function() {login.style.display = "block";}
-</script>
+<script type="text/javascript" src="javascript.js"></script>
 
 
 </body>
