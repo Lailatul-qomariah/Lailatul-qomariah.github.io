@@ -5,7 +5,6 @@ body {
 }
 
 
-
   .menu{
     margin-top: 1%;
     margin-left: 20%;
@@ -122,7 +121,7 @@ body {
     background-color: white;
     margin: auto;
     padding: 0;
-    width: 50%;
+    width: 40%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
@@ -131,6 +130,33 @@ body {
   padding: 5px 6px;
 }
 
+
+
+.close {
+  margin-top: 7px;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.foot {
+  font-size: 14px;
+  padding: 5px 16px;
+  color: #ffffff;
+  background: linear-gradient(#006faa, #002c44);
+}
+
+.head {
+  font-size: 12px;
+  padding: 1px 16px;
+  color: white;
+  background: linear-gradient(#006faa, #002c44);
+}
 
 input {
   margin-left: 30%;
@@ -160,12 +186,6 @@ img{
   width: 5%;
   height: 5%;
   padding-left: 3%;
-}
-
-.head{
-    font-size: 20px;
-    padding: 1px 16px;
-    background: white;
 }
 
 .sosmed{
