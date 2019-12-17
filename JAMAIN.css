@@ -4,8 +4,8 @@ body {
 	background-size: cover;
 }
 
-
-  .menu{
+/*##########################bagian menu################################*/
+  .menu{    
     margin-top: 1%;
     margin-left: 20%;
  
@@ -28,17 +28,16 @@ body {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 32px;
     text-decoration: none;
   }
 
 .menu li a:hover{
   padding:16px 32px;
-  text-align: right;
   font-size: 16px;
   opacity: 0.8;
   transition: 0.3s;
-  border-radius: 40%;
+  border-radius: 35%;
   margin-right:2%;
   margin-left: 3%;
   background-color: #CBAEA2;
@@ -56,12 +55,13 @@ body {
     position: absolute;
     display: none;
     background-color: #CBAEA2;
-    padding-left: 0%;
+    width: 8%;
+    padding-left: 1px;
   }
 
   .isi a:hover {
     color: black ;
-    background: black;
+    background: white;
   }
 
 
@@ -69,15 +69,18 @@ body {
    font-family: "Aksara Jawa";
    src: url('Aksara Jawa.TTF');
 }
- 
-.jamain1 {
+
+
+/*######################bagain main####################
+*/
+.jamain1 {                      /*tulisan jamain*/
    font-family: "Aksara Jawa";
    color: #E8E9EC;
    font-size: 60px;
    margin-left: 70%;
 }
 
-.text1{
+.text1{                       /*tulisan*/
 	color: white;
 	font-family: sans-serif;
 	font-size: 18px;
@@ -85,7 +88,7 @@ body {
 	margin-right: 8%;
 }
 
-#tombol{
+#tombol{                    /*button login*/
 	background: #5C92F0;
 	color: white;
 	font-size: 16px;
@@ -103,7 +106,9 @@ body {
  
 }
 
-.isinya{
+/*###########bagain form pendaftaran############*/
+
+.isinya{            /*bagian belakang*/
     display: none;
     position: fixed;
     padding-top: 3%;
@@ -116,7 +121,7 @@ body {
     background-color: rgba(0,0,0,0.7);
 }
 
-.konten {
+.konten {                  /*kotak putihnya*/
     position: relative;
     background-color: white;
     margin: auto;
@@ -126,13 +131,11 @@ body {
 
 }
 
-.main{
+.main{        /*isi formnya*/
   padding: 5px 6px;
 }
 
-
-
-.close {
+.close {      /*tombol close*/
   margin-top: 7px;
   color: white;
   float: right;
@@ -144,56 +147,212 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-.foot {
-  font-size: 14px;
-  padding: 5px 16px;
-  color: #ffffff;
-  background: linear-gradient(#006faa, #002c44);
-}
 
-.head {
+.head {       /*head formnya*/
   font-size: 12px;
   padding: 1px 16px;
   color: white;
   background: linear-gradient(#006faa, #002c44);
 }
 
-input {
+.foot {       /*foot formnya*/
+  font-size: 14px;
+  padding: 5px 16px;
+  color: #ffffff;
+  background: linear-gradient(#006faa, #002c44);
+}
+
+input {             /*inputan di form*/
   margin-left: 30%;
   margin-top: 2%;
   margin-bottom: 2%;
   width: 40%;
 
 }
-.ye{
+.ye{        /*ceklitsnya*/
   width: 4%;
 }
 
-button{
+button{     /*button daftar*/
   background: #5C92F0;
   margin-left: 30%;
   margin-top: 2%;
   margin-bottom: 2%;
   width: 40%;
 }
-.opsi{
+.opsi{      /*opsi masuk dengan*/ 
   font-size: 20px;
   text-align: center;
   font-family: "book antiqua";
 }
 
-img{
+img{        /*dalem form*/
   width: 5%;
   height: 5%;
   padding-left: 3%;
 }
 
-.sosmed{
+.sosmed{      /*gmbar fb dan google di luar */
   padding-top: 8%;
 }
 
-.sosmed img{
+.sosmed img{        /*gmbar fb dan google diluar*/
   width: 3%;
   height: 3%;
   padding-left: 3%;
 }
+
+
+@media screen and (max-width: 360px) {
+
+body {
+  background-image: url('image/background.jpg');
+  background-position: center center;
+
+}
+.jamain1{
+  font-size: 40px;
+  color: #E8E9EC;
+  margin-left: 40%;
+}
+
+.text1{                       /*tulisan*/
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-left: 40%;
+}
+
+#tombol{                    /*button login*/
+  font-size: 12px;
+  padding: 3px 10px;
+  width: 30%;
+  margin-left: 40%;
+
+}
+
+.isi {
+    position: absolute;
+    display: none;
+    width: 50%;
+    padding-left: 1px;
+  }
+.sosmed{
+  font-size: 10px;
+}
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 420px) {
+
+body {
+  background-image: url('image/background.jpg');
+  background-position: center center;
+
+}
+.jamain1{
+  font-size: 50px;
+  color: #E8E9EC;
+  margin-left: 55%;
+}
+
+.text1{                    
+  color: white;
+  font-size: 16px;
+  margin-left: 40%;
+}
+
+#tombol{                  
+  font-size: 14px;
+  padding: 10px 20px;
+  width: 26%;
+  margin-left: 30%;
+}
+.isi {
+    position: absolute;
+    display: none;
+    width:25%;
+    padding-left: 1px;
+  }
+.sosmed{
+  font-size: 10px;
+}
+
+}
+
+
+
+@media screen and (min-width: 420px) and (max-width: 720px) {
+body {
+  background-image: url('image/background.jpg');
+  background-position: center center;
+
+}
+.jamain1{
+  font-size: 50px;
+  color: #E8E9EC;
+  margin-left: 55%;
+}
+
+.text1{                      
+  color: white;
+  font-size: 16px;
+  margin-left: 40%;
+}
+
+#tombol{                    
+  font-size: 14px;
+  padding: 10px 20px;
+  width: 27%;
+  margin-left: 30%;
+}
+.isi {
+    position: absolute;
+    display: none;
+    width:25%;
+    padding-left: 1px;
+  }
+.sosmed{
+  font-size: 12px;
+}
+}
+
+
+
+@media screen and (min-width: 720px) {
+
+body {
+  background-image: url('image/background.jpg');
+  background-position: center center;
+
+}
+.jamain1{
+  color: #E8E9EC;
+  font-size: 60px;
+  margin-left: 70%;
+}
+
+.text1{                     
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-left: 50%;
+}
+
+#tombol{                    
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 16%;
+  margin-left: 60%;
+}
+.isi {
+    position: absolute;
+    display: none;
+    width:12%;
+    padding-left: 1px;
+  }
+
+}
+
+
+

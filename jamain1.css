@@ -19,7 +19,7 @@ body{
 
 }
 
-p{
+p{            /*tulisan jamain*/
 	padding: 3% 3% 3% 5%;
 	font-size: 45px;
 }
@@ -28,7 +28,7 @@ p{
 .menu{
   margin-left: 15%;
   margin-top: -10%;
-  width: 80%;
+  width: 85%;
   font-family: "book Antiqua";
 }
 
@@ -47,15 +47,15 @@ p{
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px ;
   text-decoration: none;
 }
 
 .menu li a:hover{
   background-color: #CBAEA2;
+  padding: 16px 16px ;
   opacity: 1;
-  text-align: right;
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0.8;
   transition: 0.3s;
   border-radius: 40%;
@@ -73,23 +73,24 @@ li.dropdown {
   position: absolute;
   display: none;
   background-color: #CBAEA2;
-  padding-left: 0%;
+  width: 8%;
+  padding-left: 1px;
 }
 
 .isi a:hover {
   color: black ; 
 }
 
-#cari{
+#cari{              /*input cari*/
   display: none;
   margin-top: 1%;
-  border-radius: 10px;
-  width: 20%;
+  border-radius: 5px;
+  width: 15%;
 }
 
 #loop{
   float: right;
-  margin-right: 3%;
+  margin-right: 10%;
   margin-top: 1%;
   width: 3%;
   height: 3%;
@@ -101,17 +102,13 @@ li.dropdown {
 	width: 100%;
 }
 
-#bahasa option{
-	width: 50%;
-}
-
 #bahasa select{
   padding: 1% 12% 1% 2%;
   font-size: 18px;
   line-height: 1%;
   width: 40%;   /*ngubah kotaknya*/
-  margin-right: 2%;
-  margin-left: 2%;  
+  margin-right: 1%;
+  margin-left: 3%;  
 }
 
 .translate{ /*button translate*/
@@ -123,12 +120,12 @@ li.dropdown {
   padding: 10px 20px;
   width: 15%;
   float: right;
-  margin: 2% 10%;
+  margin: 2% 4%;
 
 }
 
 .switch{
-  margin: 2% 2% 0% 1%;
+  margin: 2% 2% 0% 4%;
   width: 2%;
   height: 2%;
 }
@@ -142,63 +139,40 @@ li.dropdown {
 	margin-top: 3%;
 	font-size: 18px;
 	margin-right: 2%;
-	margin-left: 2%;
+	margin-left: 3%;
 }
 .textarea2{
   width: 40%; /*ngubah kotaknya*/
   margin-top: 3%;
   font-size: 18px;
   margin-right: 2%;
-  margin-left: 7%;
+  margin-left: 10%;
 }
 
 
 .p1{
   float: left;
-  padding: 1% 3% 2% 7%;
-	font-size: 16px;
+  padding: 2% 3% 1% 3%;
+	font-size: 18px;
   color: white;
-  width: 20%;
+  width: 25%;
+  margin-left: 2%;
 }
 
-.p2{
+.findus{
   float: left;
-  padding: 1% 3% 2% 0%;
+  padding: 1% 6% 1% 0%;
   text-align: center;
   font-size: 16px;
   color: white;
-  width: 20%;
-
+  width: 25%;
+  margin-left: 40%;
 }
-
-.garis{
-  float: left;
-  margin-top: 2%;
-  height: 60px;
-  border-left: 3px white solid;
-  display: inline-block;
-}
-
-.p3{
-  font-family: "Aksara Jawa";
-  color: white;
-  padding: 2% 3% 2% 7%;
-  font-size: 24px;
-  padding-left: 2;
-  width: 20%;
-  float: left;
-}
-
-@media screen and (max-width: 600px) {
-  .p1, .garis, .p2, .p3 {width: 100%; } }
-
-
 
 #footer{
 	background: url('image/footer.png');
 	background-repeat: no-repeat;
-	margin-bottom: -10%;
-}
+ }
 
 #footer:after{
   content: "";
@@ -210,8 +184,6 @@ img{
   width: 7%;
   height: 7%;
 }
-
-
 
 .Aksara{
   margin-top: -10%;
@@ -275,4 +247,301 @@ img{
   width: 40%;
   height: 40%;
   padding-right: 3%;
+}
+
+@media only screen and (max-width: 360px){
+.header {
+  padding-top: 2%;
+  margin-top: -7%;
+  line-height: 3%;
+}
+p{
+  font-size: 24px;
+}
+
+.menu{
+  width: 75%;
+}
+
+.isi {
+  width: 26%;
+
+}
+
+#cari{
+  position: initial;
+  display: none;
+  border-radius: 5px;
+  width: 30%;
+}
+
+#loop{
+  width: 10%;
+  height: 10%;
+
+}
+.Aksara{
+  margin-top: -5%;
+}
+.nav ul li a:hover{
+  background-color: #CBAEA2;
+  width: 50%;
+}
+#bahasa select{
+  font-size: 12px;
+  width: 35%; 
+}
+#bahasa {
+  margin-top: -10%;
+}
+.switch{
+  width: 5%;
+  height: 5%;
+}
+.translate{ /*button translate*/
+  font-size: 12px;
+  width: 30%;
+}
+.textarea1{
+  width: 30%; /*ngubah kotaknya*/
+}
+.textarea2{
+  width: 30%; /*ngubah kotaknya*/
+}
+.kotak{
+  padding-bottom: 20%;
+}
+.findus{
+  font-size: 12px;
+  color: white;
+  margin-left: 40%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 420px) {
+.header {
+  padding-top: 2%;
+  margin-top: -7%;
+  line-height: 3%;
+}
+p{
+  font-size: 28px;
+}
+
+.menu{
+  width: 75%;
+}
+
+.isi {
+  width: 27%;
+
+}
+
+#cari{
+  position: initial;
+  display: none;
+  border-radius: 5px;
+  width: 30%;
+}
+
+#loop{
+  width: 8%;
+  height: 8%;
+
+}
+.Aksara{
+  margin-top: -3%;
+}
+
+.nav ul li a:hover{
+  background-color: #CBAEA2;
+  width: 37%;
+}
+#bahasa select{
+  font-size: 12px;
+  width: 35%; 
+}
+#bahasa {
+  margin-top: -10%;
+}
+.switch{
+  width: 5%;
+  height: 5%;
+}
+.translate{ /*button translate*/
+  width: 30%;
+}
+.textarea1{
+  width: 30%; /*ngubah kotaknya*/
+}
+.textarea2{
+  width: 30%; /*ngubah kotaknya*/
+}
+.kotak{
+  padding-bottom: 20%;
+}
+.findus{
+  font-size: 12px;
+  color: white;
+  margin-left: 40%;
+}
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 720px) {
+.header {
+  padding-top: 3%;
+  margin-top: -7%;
+  line-height: 3%;
+}
+p{
+  font-size: 30px;
+}
+
+.menu{
+  width: 70%;
+}
+.nav ul li a:hover{
+  background-color: #CBAEA2;
+  width: 70%;
+}
+
+.isi {
+  width: 24%;
+
+}
+
+#cari{
+  position: initial;
+  display: none;
+  border-radius: 5px;
+  width: 30%;
+}
+
+#loop{
+  width: 6%;
+  height: 6%;
+
+}
+.Aksara{
+  margin-top: -2%;
+}
+.column.side{ 
+  width: 40%;
+  height: 60%;
+  margin-top: -7%;
+}
+#bahasa select{
+  font-size: 14px;
+  width: 35%; 
+}
+#bahasa {
+  margin-top: -8%;
+}
+.switch{
+  width: 5%;
+  height: 5%;
+}
+.translate{ /*button translate*/
+  font-size: 12px;
+  width: 30%;
+
+}
+.textarea1{
+  width: 30%; /*ngubah kotaknya*/
+
+}
+.textarea2{
+  width: 30%; /*ngubah kotaknya*/
+}
+.kotak{
+  padding-bottom: 20%;
+}
+.findus{
+  font-size: 14px;
+  color: white;
+  margin-left: 40%;
+}
+
+}
+
+@media screen and (min-width: 720px) and (max-width: 960px) {
+.header {
+  padding-top: 2%;
+  margin-top: -2%;
+  line-height: 3%;
+}
+p{
+  font-size: 36px;
+}
+
+.menu{
+  margin-left: 20%;
+  width: 80%;
+}
+.nav ul li a:hover{
+  background-color: #CBAEA2;
+  width: 50%;
+}
+.isi {
+  width: 13%;
+
+}
+.column.side{ 
+  width: 40%;
+  height: 60%;
+  margin-top: -7%;
+}
+#cari{
+  float: left;
+  border-radius: 5px;
+  width: 20%;
+}
+
+#loop{
+  margin-right: 50%;
+  width: 5%;
+  height: 5%;
+
+}
+.Aksara{
+  margin-top: -2%;
+}
+h2{
+  margin-top: 10%;
+}
+#bahasa select{
+  font-size: 18px;
+  width: 35%; 
+}
+#bahasa {
+  margin-top: -6%;
+}
+.switch{
+  width: 6%;
+  height: 6%;
+}
+.translate{ /*button translate*/
+  font-size: 16px;
+  width: 30%;
+
+}
+.textarea1{
+  width: 40%; /*ngubah kotaknya*/
+
+}
+.textarea2{
+  width: 40%; /*ngubah kotaknya*/
+}
+.kotak{
+  padding-bottom: 10%;
+}
+.findus{
+  font-size: 16px;
+  color: white;
+  margin-left: 40%;
+}
 }

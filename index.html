@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="JAMAIN.css">
 	<title>Beranda</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -23,7 +25,7 @@
 
 		<p class="jamain1"> Jama.in </p>
 		<p class="text1"> Belajar dengan mudah bahasa, aksara, sastra Madura dan Jawa.</p><br><br><br><br><br><br><br>
-		<a onclick="tombol()"><button id="tombol">DAPATKAN INFO</button></a>
+		<a onclick="tombol()"><button id="tombol" class="tombol">DAPATKAN INFO</button></a>
 		<p class="sosmed">Social Media<br><br>
 			<a href="http://www.facebook.com"><img src="image/fb.png"></a>
 			<a href="https://twitter.com/"><img src="image/twit.png">
@@ -60,8 +62,35 @@
 	</div>
 	
 
-<script type="text/javascript" src="pop.js">
+<script type="text/javascript" src="pop.js"></script>
 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#daftar').click(function() {
+			var nama = $('#nama').val();
+			var email = $('#email').val();
+			var pw = $('#password').val();
+			var pw1 = $('#password1').val();	
+ 			if (nama=="" && email == "" && pw=="" && pw1=="" ) {				
+				alert("Masukkan data anda");
+			}
+			else if (nama == "") {				
+				alert("Nama tidak boleh kosong");
+			}
+			else if (email == "") {				
+				alert("Email tidak boleh kosong");
+			}
+			else if (pw == "") {				
+				alert("Masukkan password");
+			}
+			else if (pw1 == "") {				
+				alert("Konfirmasi password anda");
+			}
+			else {
+				location.href="translate.html";
+			}
+		});
+	});
 </script>
 
 
