@@ -68,8 +68,8 @@
 						Karena kecintaanya pada suami dan sekaligus anak kandungnya itu, Shinta menghadap Sang Hyang Bathara Guru. Memohon agar Prabu Watugunung dihidupkan kembali. Permohonan Shinta dikabulkan. Sesudah hidup kembali, Prabu Watugunung diangkat oleh Sang Hyang Bathara Guru untuk menggenapi dewa. <br> <br>
 						Sang Hyang Bathara Guru membuat kebijaksanaan. Sang Hyang Bhatara Wisnu yang menjadi raja manusia beralih tugas menjadi raja makhluk halus. Selama menjabat sebagai raja makhluk halus, Wisnu menguasai delapan wilayah yang meliputi gunung Merapi, Pamantingan (Parangtritis), Kabarehan, Lodaya, Kuwubaleduk, Waringinsapta, Kayulandeyan, dan Roban. <br> <br>
 						</p>
-						<p id="shwmr">	
-						</p>
+						<div id="shwmr">
+						</div>
 						<button type="button" onclick="loadDoc()" id="btn">Tampilkan Lebih</button>
 				</div>
 		</div>
@@ -84,5 +84,26 @@
 		</div>
 	</div>
 
+<script>
+	var search = document.getElementById('cari');
+	var link = document.getElementById("loop");
+	link.onclick = function() {search.style.display = "inline-block";}
+
+
+$("#btn").click(function(){
+  		$("#btn").hide();
+	});
+	
+	function loadDoc() {
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+  			if (this.readyState == 4 && this.status == 200) {
+    			document.getElementById("shwmr").innerHTML = this.responseText;
+  			}
+		};
+		xmlhttp.open("GET", "lanjutan.txt", true);
+		xmlhttp.send();
+	}
+</script>
 </body>
 </html>
